@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/crawler_sam/__init__.py
+src/crawler_sam.egg-info/PKG-INFO
+src/crawler_sam.egg-info/SOURCES.txt
+src/crawler_sam.egg-info/dependency_links.txt
+src/crawler_sam.egg-info/top_level.txt
