@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "==2.3.3"
 crawler-sam = {file = ".", editable = true}
+celery = "==5.5.0"
 
 [dev-packages]
 
