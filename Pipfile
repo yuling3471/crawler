@@ -7,6 +7,8 @@ name = "pypi"
 flask = "==2.3.3"
 celery = "==5.5.0"
 crawler-sam = {file = ".", editable = true}
+pandas = "*"
+requests = "*"
 
 [dev-packages]
 

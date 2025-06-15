@@ -1,8 +1,10 @@
 README.md
+pyproject.toml
 setup.py
 crawler_sam/__init__.py
 crawler_sam/producer.py
 crawler_sam/tasks.py
+crawler_sam/test.py
 crawler_sam/worker.py
 crawler_sam.egg-info/PKG-INFO
 crawler_sam.egg-info/SOURCES.txt
