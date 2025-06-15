@@ -5,7 +5,6 @@
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_full_version": "3.8.10",
             "python_version": "3.8"
         },
         "sources": [
@@ -88,7 +87,6 @@
                 "sha256:4f82fdff0dbe64ef8ab2279bd6aa3f6a99c3b28c05aa09cbfc07c9d7fbb5a463",
                 "sha256:5c4bb6007cfea5f2fd6583a2fb6701a22a41eb98957e63d0fac41c10e7c3117c"
             ],
-            "markers": "python_full_version >= '3.6.2'",
             "version": "==0.3.1"
         },
         "click-plugins": {
