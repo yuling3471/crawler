@@ -1,4 +1,4 @@
-from crawler_sam.tasks_crawler_finmind import crawler_finmind
+from crawler.tasks_crawler_finmind import crawler_finmind
 
 # 發送到 twse 的 queue
 task_2330 = crawler_finmind.s(stock_id="2330")

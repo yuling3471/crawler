@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "97d758af01dfcb61e26d70e0c2aebc1ed3b73f1e92bdf940ab7c1945e29e3c60"
+            "sha256": "3b586944e027afbe62913b8653bd84677e66cffdab75e85b9237df2f4d643dae"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -210,9 +210,9 @@
             "markers": "python_version >= '3.6'",
             "version": "==0.3.0"
         },
-        "crawler-sam": {
+        "crawler": {
             "editable": true,
-            "file": "file:///home/sam/tibame/crawler"
+            "path": "."
         },
         "flask": {
             "hashes": [

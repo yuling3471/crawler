@@ -3,9 +3,9 @@
 
 ## worker
 
-    pipenv run celery -A crawler_sam.worker worker --loglevel=info
+    pipenv run celery -A crawler.worker worker --loglevel=info
 
 
 ## producer
 
-    pipenv run python crawler_sam/producer.py
+    pipenv run python crawler/producer.py
