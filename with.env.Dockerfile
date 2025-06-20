@@ -25,7 +25,7 @@ RUN pipenv sync
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-# 建立環境
+# 建立 .env
 RUN ENV=DOCKER python3 genenv.py
 
 # 啟動容器後，預設執行 bash（開啟終端）
