@@ -12,7 +12,7 @@
 
 #### 建立環境變數
 
-    ENV=DEFAULT python genenv.py
+    ENV=DEV python genenv.py
     ENV=DOCKER python genenv.py
     ENV=PRODUCTION python genenv.py
 
