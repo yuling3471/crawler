@@ -11,11 +11,14 @@ def crawler_finmind(stock_id):
     parameter = {
         "dataset": "TaiwanStockPrice",
         "data_id": stock_id,
-        "start_date": "2020-01-01",
+        "start_date": "2024-01-01",
         "end_date": "2025-06-17",
     }
     resp = requests.get(url, params=parameter)
     data = resp.json()
-    df = pd.DataFrame(data["data"])
-    print(df)
-    print("upload db")
+    if resp.status_code == 200:
+        df = pd.DataFrame(data["data"])
+        print(df)
+        print("upload db")
+    else:
+        print(data["msg"])

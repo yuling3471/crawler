@@ -50,12 +50,16 @@
 #### build docker image
 
     docker build -f Dockerfile -t linsamtw/tibame_crawler:0.0.1 .
+    docker build -f Dockerfile -t linsamtw/tibame_crawler:0.0.2 .
     docker build -f with.env.Dockerfile -t linsamtw/tibame_crawler:0.0.3 .
+    docker build -f with.env.Dockerfile -t linsamtw/tibame_crawler:0.0.4 .
 
 #### push docker image
 
     docker push linsamtw/tibame_crawler:0.0.1
+    docker push linsamtw/tibame_crawler:0.0.2
     docker push linsamtw/tibame_crawler:0.0.3
+    docker push linsamtw/tibame_crawler:0.0.4
 
 #### 建立 network
 
@@ -76,7 +80,8 @@
 
 #### 關閉 worker
 
-    docker compose -f docker-compose-worker-network.yml up -d
+    docker compose -f docker-compose-worker-network.yml down
+    DOCKER_IMAGE_VERSION=0.0.3 docker compose -f docker-compose-worker-network-version.yml down
 
 #### producer 發送任務
 
@@ -86,6 +91,14 @@
 #### 查看 docker container 狀況
 
     docker ps -a
+
+#### 啟動 scheduler
+
+    DOCKER_IMAGE_VERSION=0.0.4 docker compose -f docker-compose-scheduler-network-version.yml up -d
+
+#### 關閉 scheduler
+
+    DOCKER_IMAGE_VERSION=0.0.4 docker compose -f docker-compose-scheduler-network-version.yml down
 
 #### 查看 log
 
