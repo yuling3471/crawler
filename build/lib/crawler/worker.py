@@ -1,11 +1,7 @@
 from celery import Celery
 
-from crawler.config import (
-    RABBITMQ_HOST,
-    RABBITMQ_PORT,
-    WORKER_ACCOUNT,
-    WORKER_PASSWORD,
-)
+from crawler.config import (RABBITMQ_HOST, RABBITMQ_PORT, WORKER_ACCOUNT,
+                            WORKER_PASSWORD)
 
 app = Celery(
     "task",
